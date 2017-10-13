@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AnimalsViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    AnimalsViewController *animalsVC = [[AnimalsViewController alloc] init];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = animalsVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -15,6 +15,10 @@
 		F405D5481F7F34F60090A789 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F405D5471F7F34F60090A789 /* main.m */; };
 		F405D5521F7F34F60090A789 /* RuntimeWithMsgSendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F405D5511F7F34F60090A789 /* RuntimeWithMsgSendTests.m */; };
 		F405D55D1F7F34F70090A789 /* RuntimeWithMsgSendUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F405D55C1F7F34F70090A789 /* RuntimeWithMsgSendUITests.m */; };
+		F4B217D31F8E19AF003145A8 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B217D21F8E19AF003145A8 /* Cat.m */; };
+		F4B217D61F8E19B8003145A8 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B217D51F8E19B8003145A8 /* Dog.m */; };
+		F4B217D91F8E19C4003145A8 /* Rabbit.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B217D81F8E19C4003145A8 /* Rabbit.m */; };
+		F4B217DC1F8E1F0D003145A8 /* AnimalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B217DB1F8E1F0D003145A8 /* AnimalsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		F405D5581F7F34F70090A789 /* RuntimeWithMsgSendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeWithMsgSendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F405D55C1F7F34F70090A789 /* RuntimeWithMsgSendUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeWithMsgSendUITests.m; sourceTree = "<group>"; };
 		F405D55E1F7F34F70090A789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B217D11F8E19AF003145A8 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		F4B217D21F8E19AF003145A8 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		F4B217D41F8E19B8003145A8 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		F4B217D51F8E19B8003145A8 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		F4B217D71F8E19C4003145A8 /* Rabbit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rabbit.h; sourceTree = "<group>"; };
+		F4B217D81F8E19C4003145A8 /* Rabbit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rabbit.m; sourceTree = "<group>"; };
+		F4B217DA1F8E1F0D003145A8 /* AnimalsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalsViewController.h; sourceTree = "<group>"; };
+		F4B217DB1F8E1F0D003145A8 /* AnimalsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		F405D52C1F7F34F60090A789 = {
 			isa = PBXGroup;
 			children = (
+				F4B217C31F8CC7FD003145A8 /* Animals */,
 				F405D5371F7F34F60090A789 /* RuntimeWithMsgSend */,
 				F405D5501F7F34F60090A789 /* RuntimeWithMsgSendTests */,
 				F405D55B1F7F34F70090A789 /* RuntimeWithMsgSendUITests */,
@@ -130,6 +143,21 @@
 				F405D55E1F7F34F70090A789 /* Info.plist */,
 			);
 			path = RuntimeWithMsgSendUITests;
+			sourceTree = "<group>";
+		};
+		F4B217C31F8CC7FD003145A8 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				F4B217D11F8E19AF003145A8 /* Cat.h */,
+				F4B217D21F8E19AF003145A8 /* Cat.m */,
+				F4B217D41F8E19B8003145A8 /* Dog.h */,
+				F4B217D51F8E19B8003145A8 /* Dog.m */,
+				F4B217D71F8E19C4003145A8 /* Rabbit.h */,
+				F4B217D81F8E19C4003145A8 /* Rabbit.m */,
+				F4B217DA1F8E1F0D003145A8 /* AnimalsViewController.h */,
+				F4B217DB1F8E1F0D003145A8 /* AnimalsViewController.m */,
+			);
+			path = Animals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B217D31F8E19AF003145A8 /* Cat.m in Sources */,
 				F405D53D1F7F34F60090A789 /* ViewController.m in Sources */,
+				F4B217D61F8E19B8003145A8 /* Dog.m in Sources */,
+				F4B217D91F8E19C4003145A8 /* Rabbit.m in Sources */,
 				F405D5481F7F34F60090A789 /* main.m in Sources */,
 				F405D53A1F7F34F60090A789 /* AppDelegate.m in Sources */,
+				F4B217DC1F8E1F0D003145A8 /* AnimalsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
