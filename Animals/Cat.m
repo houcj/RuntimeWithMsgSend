@@ -17,8 +17,8 @@ void say(id self, SEL _cmd){
 
 + (BOOL)resolveInstanceMethod:(SEL)sel{
     if ([NSStringFromSelector(sel) isEqualToString:@"sayHello"]) {
-        class_addMethod([self superclass], sel, (IMP)say, "v@:");
-//        class_addMethod([self class], sel, (IMP)say, "v@:");
+//        class_addMethod([self superclass], sel, (IMP)say, "v@:");
+        class_addMethod([self class], sel, (IMP)say, "v@:");
         return YES;
     }
     return [super resolveInstanceMethod:sel];

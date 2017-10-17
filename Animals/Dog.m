@@ -12,10 +12,6 @@
 
 @implementation Dog
 
-//void say (id self, SEL _cmd, NSString *name){
-//    NSLog(@"say---%@",name);
-//}
-
 + (BOOL)resolveInstanceMethod:(SEL)sel{
     return NO;
 }
